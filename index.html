@@ -1,0 +1,66 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.31.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+
+    <div class="min-h-screen bg-slate-300 ">
+        <div class="flex items-center justify-center h-screen">
+            <!--  <h1 class="text-5xl font-bold">Form Validation</h1>-->
+
+            <div class="card  w-full max-w-sm shadow-2xl bg-slate-700">
+                <div id="error"></div>
+
+                <form action="/" id="form" method="GET">
+                    <div class="card-body">
+                        <h1 class="text-4xl font-bold text-sky-300">Form Validation</h1>
+                        <div class="form-control">
+                            <label class="label">
+                  <span class="label-text">Username</span>
+                </label>
+                            <input type="text" placeholder="username" class="userInput input input-bordered bg-slate-300 text-gray-800" />
+                        </div>
+                        <div class="form-control">
+                            <label class="label">
+                  <span class="label-text">Email</span>
+                </label>
+                            <input type="text" placeholder="email" class="emailInput input input-bordered bg-slate-300  text-gray-800" />
+                        </div>
+                        <div class="form-control">
+                            <label class="label">
+                  <span class="label-text">Password</span>
+                </label>
+                            <input type="text" placeholder="password" class="passwordInput input input-bordered bg-slate-300 text-gray-800" />
+                            <label class="label">
+                        </label>
+                        </div>
+                        <div class="form-control">
+                            <label class="label">
+                            <span class="label-text">Confirm Password</span>
+                        </label>
+                            <input type="text" placeholder="confirm password" class="confirmPasswordInput input input-bordered bg-slate-300 text-gray-800" />
+
+                        </div>
+                        <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                        <div class="form-control mt-6">
+                            <button class="signBtn btn btn-primary bg-slate-500">Sign Up</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
