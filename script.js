@@ -13,7 +13,6 @@ function Submit(event) {
 
     if (userInput.value === "" || userInput == null || userInput.value.length <= 6) {
         userInput.style.background = "rgb(255 237 213)";
-        userInput.style.color = "rgb(255 237 213)";
         return error.innerText = "Username should not be empty less than 6 character";
     }
     if (emailInput.value === "" || emailInput == null || emailInput.value.length <= 6) {
